@@ -1,0 +1,21 @@
+.pie {
+    background-image: url("../Imagenes/FondoCompleto.jpeg");
+    background-size: cover;
+    height: 170px;
+    color: black;
+    font-size: 20px;
+    line-height: 35px;
+    grid-area: footer;
+  
+    .pie__arriba {
+        text-align: right;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+  
+    .pie__arriba a {
+        color: #5d6329;
+    }
+} 
+  
+ 

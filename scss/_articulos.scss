@@ -1,0 +1,57 @@
+.titulo1 {
+  margin: 50px;
+  margin-top: 25vh;
+  border-bottom: #bac751 solid 4px;
+
+  @extend %fontTitulo1;
+}
+
+.titulo2 {
+  color: $darkerGreen;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 30px;
+  margin: 40px;
+}
+
+.cajasArticulos {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas:
+    "nuevosProductos top10DeProductos"
+    "experiencias nuestroLocal";
+  grid-column-gap: 50px;
+  grid-row-gap: 70px;
+  justify-items: center;
+
+  .nuevosProductos {
+    grid-area: nuevosProductos;
+  }
+
+  .top10 {
+    grid-area: top10DeProductos;
+  }
+
+  .experiencias {
+    grid-area: experiencias;
+  }
+      
+  .nuestroLocal {
+    grid-area: nuestroLocal;
+  }
+
+  .articulo {
+    font-size: 25px;
+    width: 40vw;
+    height: 400px;
+    color: #4c8530;  
+    border-radius: 10%;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    background-image: url("../Imagenes/Prueba12.jpg");
+    background-size: cover;
+  }
+}
+  

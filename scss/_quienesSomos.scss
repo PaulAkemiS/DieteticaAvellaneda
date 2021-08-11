@@ -1,0 +1,64 @@
+.titulo1 {
+    margin: 50px;
+    margin-top: 25vh;
+    border-bottom: #bac751 solid 4px;
+
+    @extend %fontTitulo1;
+}
+  
+.titulo1-modifier {
+    margin-top:40vh;
+}
+
+.titulo2 {
+    color: $darkerGreen;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.texto {
+    font-size: 15px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.cajaNegocio {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas:
+      "imagenNegocio1 imagenNegocio2"
+      "mapaNegocio textoNegocio";
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .cajaNegocio__imagenNegocio1{
+        grid-area: imagenNegocio1;
+    }
+
+    .cajaNegocio__imagenNegocio2{
+        grid-area: imagenNegocio2;
+    }
+
+    .cajaNegocio__texto{
+        font-size: 15px;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    .cajaNegocio__textoNegocio{
+        margin: 50px;
+        grid-area: textoNegocio;
+        text-align: left;
+        transition: 0.5s;
+    }
+
+    .cajaNegocio__textoNegocio:hover{
+    font-size: 25px;
+    }
+}

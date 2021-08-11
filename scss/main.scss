@@ -1,0 +1,26 @@
+$green:#bac751;
+$darkerGreen:#4c8530;
+$orange:#f8bf0a;
+$ancho: 50vw;
+
+
+@import 'placeholder';
+@import 'mixin';
+@import 'reset';
+
+
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+
+  @import 'header';
+  @import 'imagen';
+  @import 'articulos';  
+  @import 'recetasMasVistas';
+  @import 'productos';
+  @import 'recetas';
+  @import 'quienesSomos';
+  @import 'contacto';  
+  @import 'footer';
+}

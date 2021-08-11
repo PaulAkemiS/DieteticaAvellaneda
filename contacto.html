@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recetas</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header id="header" class="headerBackground">
+            <div class="headerGrid">
+                <div>
+                    <a href="index.html"><img src="Imagenes/Avellaneda.png" alt="Logo" class="logo animate__animated animate__rollIn"></a>
+                </div>
+                <nav>
+                    <ul class="list">
+                        <li class="list__itemList"><a href="index.html">INICIO</a></li>
+                        <li class="list__itemList list__itemSubmenu"><a href="productos.html">PRODUCTOS</a>
+                            <ul class="sublist">
+                                <li class="sublist__itemSublist"><a href="productos.html">Categorías</a></li>
+                                <li class="sublist__itemSublist"><a href="productos.html">Nuevos productos</a></li>
+                                <li class="sublist__itemSublist"><a href="productos.html">Top ten de productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="list__itemList"><a href="recetas.html">RECETAS</a></li>
+                        <li class="list__itemList"><a href="quienessomos.html">QUIÉNES SOMOS</a></li>
+                        <li class="list__itemList"><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--Comienzo-->
+        <h1 class="titulo1 titulo1-modifier">CONTÁCTANOS!</h1>
+        <section>
+            <form action="" class="recuadro">
+                <div>
+                    <label class="recuadro__form-label">Nombre</label><br>
+                    <input class="recuadro__cajaTexto" type="text" id="validationDefault01" placeholder="Nombre" required><br>
+                </div>
+                <div>
+                    <label class="recuadro__form-label">Apellido</label><br>
+                    <input class="recuadro__cajaTexto" type="text" id="validationDefault02" placeholder="Apellido" required><br>
+                </div>
+                <div>
+                    <label class="recuadro__form-label">E-mail</label><br>
+                    <input class="recuadro__cajaTexto" type="text" id="validationDefault02" placeholder="dietetica@avellaneda.com" required><br>
+                </div>
+                <div>
+                    <label class="recuadro__form-label recuadro__form-label">Teléfono</label><br>
+                    <input class="recuadro__cajaTexto" type="text" id="validationDefault03" placeholder="261-(15)5449966" required><br><br>
+                </div>
+                <div>
+                    <p class="recuadro__form-label recuadro__form-label-select">Acepto compartir mis datos de contacto</p>
+                    <input class="recuadro__cajaTexto recuadro__cajaTexto-checkBox"type="checkbox" name="acepta" value="1"><br><br>
+                </div>
+                <div>
+                    <select name="Sexo" id="validationDefault04" class="recuadro__form-label-select" required>
+                        <option selected disabled value="">Seleccionar</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="O">Otro</option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <p class="recuadro__form-label">Tu mensaje</p><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+                </div>
+                <div>
+                    <button class="btn btn-orange btn-rounded" type="submit">Enviar</button>
+                    <button class="btn btn-orange btn-rounded" type="reset">Borrar</button>
+                </div>
+            </form><br><br>
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="pie__arriba">
+            <a href="#header">Arriba!</a>
+        </div>
+        <div>
+            <p>Contáctanos!<br>
+                Tel:2614235535<br>
+                Cel/WhsatsApp: 2617105944 <br>
+                dieteticaavellaneda@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
