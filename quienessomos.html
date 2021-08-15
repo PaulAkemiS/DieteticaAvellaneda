@@ -6,6 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Recetas</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,28 +17,38 @@
     </head>
     
     <body>
-        <header id="header" class="headerBackground">
-            <div class="headerGrid">
+        <header id="header">
+            <div id="headerGrid">
                 <div>
-                    <a href="index.html"><img src="Imagenes/Avellaneda.png" alt="Logo" class="logo animate__animated animate__rollIn"></a>
+                    <a href="index.html"><img src="Imagenes/Avellaneda.png" alt="Logo" id="logo"
+                            class="animate__animated animate__rollIn"></a>
                 </div>
                 <nav>
                     <ul class="list">
                         <li class="list__itemList"><a href="index.html">INICIO</a></li>
-                        <li class="list__itemList list__itemSubmenu"><a href="productos.html">PRODUCTOS</a>
-                            <ul class="sublist">
-                                <li class="sublist__itemSublist"><a href="productos.html">Categorías</a></li>
-                                <li class="sublist__itemSublist"><a href="productos.html">Nuevos productos</a></li>
-                                <li class="sublist__itemSublist"><a href="productos.html">Top ten de productos</a></li>
-                            </ul>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle list__itemList list__itemSubmenu" type="button" id="dropdownMenu2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    PRODUCTOS
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><button class="dropdown-item list__itemList" type="button"><a
+                                                href="productos.html">Categorías</a></button></li>
+                                    <li><button class="dropdown-item list__itemList" type="button"><a href="productos.html">Nuevos
+                                                productos</a></button></li>
+                                    <li><button class="dropdown-item list__itemList" type="button"><a href="productos.html">Top 10
+                                                de prodcutos</a></button></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="list__itemList"><a href="recetas.html">RECETAS</a></li>
                         <li class="list__itemList"><a href="quienessomos.html">QUIÉNES SOMOS</a></li>
                         <li class="list__itemList"><a href="contacto.html">CONTACTO</a></li>
                     </ul>
-            </nav>
-        </div>
-    </header>
+                </nav>
+            </div>
+        </header>
 
     <main>
         <!--Comienzo-->
@@ -97,6 +110,9 @@
                 dieteticaavellaneda@gmail.com</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

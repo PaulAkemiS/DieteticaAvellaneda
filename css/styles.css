@@ -1,4 +1,4 @@
-body .headerBackground .headerGrid .list .list__itemList {
+body #header #headerGrid .list .list__itemList {
   font-size: 19px;
   color: black;
   text-decoration: none; }
@@ -25,25 +25,25 @@ body {
   background-color: white;
   font-family: "Montserrat", sans-serif;
   position: relative; }
-  body .headerBackground {
+  body #header {
     background-image: url("../Imagenes/FondoCompleto.jpeg");
     background-size: cover;
     width: 100%;
     height: 30vh;
     justify-content: stretch;
     align-items: end; }
-    body .headerBackground .headerGrid {
+    body #header #headerGrid {
       display: grid;
       grid-template-columns: 40% 60%;
       grid-template-rows: 100%;
       grid-template-areas: "logo nav"; }
-      body .headerBackground .headerGrid .logo {
-        width: 50%;
+      body #header #headerGrid #logo {
+        width: 20vw;
         margin-top: 11vh;
         margin-left: 7vw;
         margin-bottom: 15vh;
         grid-area: logo; }
-      body .headerBackground .headerGrid .list {
+      body #header #headerGrid .list {
         text-align: end;
         margin-top: 25%;
         margin-bottom: 80px;
@@ -51,26 +51,15 @@ body {
         flex-direction: row;
         justify-content: flex-end;
         grid-area: nav; }
-        body .headerBackground .headerGrid .list .list__itemList {
+        body #header #headerGrid .list .list__itemList {
           list-style-type: none;
           padding: 20px; }
-          body .headerBackground .headerGrid .list .list__itemList .sublist {
-            display: none;
-            font-size: 15px;
-            line-height: 40px;
-            background-color: #f7bf6a;
-            width: 170px; }
-            body .headerBackground .headerGrid .list .list__itemList .sublist .sublist__itemSublist {
-              text-align: center;
-              border: #f8bf0a; }
-            body .headerBackground .headerGrid .list .list__itemList .sublist .sublist__itemSublist a:hover {
-              color: #baa14f; }
-        body .headerBackground .headerGrid .list .list__itemList a {
+        body #header #headerGrid .list .list__itemList a {
           color: black;
           text-decoration: none; }
-        body .headerBackground .headerGrid .list .list__itemList a:hover {
+        body #header #headerGrid .list .list__itemList a:hover {
           color: #baa14f; }
-        body .headerBackground .headerGrid .list .list__itemSubmenu:hover > .sublist {
+        body #header #headerGrid .list .list__temSubmenu:hover > .dropdown-menu {
           display: block; }
   body .imagenGrande {
     display: block;
