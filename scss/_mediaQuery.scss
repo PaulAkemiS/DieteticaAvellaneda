@@ -1,0 +1,445 @@
+
+/*LAPTOP*/
+@media (max-width: 1024px) {
+    #logo {
+      width: 22vw;
+    }
+    .list {
+      margin-top: 30vh;
+    }
+    .lis__itemList {
+      font-size: 16px;
+      padding: 10px;
+    }
+    .dropdown {
+      margin-right: 40px;
+    }
+  
+    #imagenGrande {
+      margin-top: 20%;
+    }
+    .articulo {
+      font-size: 15px;
+      width: 40vw;
+      height: 300px;
+    }
+    h2 {
+      font-size: 30px;
+      padding-top: 5px;
+    }
+    h3 {
+      font-size: 20px;
+      text-align: left;
+    }
+    .cajasRecetas {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    .tresProductosNuevos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .productosNuevos img {
+      width: 40vw;
+    }
+    .topTenCaja {
+      margin: 5px;
+    }
+    .topTen {
+      font-size: 17px;
+      text-align: left;
+      font-weight: bold;
+    }
+    .cajasRecetas {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .recetas {
+      width: 30vw;
+    }
+    .recetas2 {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      height: 0;
+      margin: auto;
+      margin-bottom: 20%;
+      padding-bottom: 40%;
+    }
+    .videosRecetas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .textoLinea {
+      font-size: 15px;
+      margin-left: 0;
+    }
+    .shadow-lg {
+      margin: 0;
+    }
+    .imagenNegocio1 img {
+      width: 40vw;
+      height: 30vh;
+    }
+    .imagenNegocio2 img {
+      width: 40vw;
+      height: 30vh;
+      padding-left: 0vw;
+    }
+    .mapaNegocio iframe {
+      width: 50vw;
+      height: 50vh;
+      padding-left: 8vw;
+    }
+    .row {
+      margin-top: 9vh;
+      margin-left: 35vw;
+    }
+    .btn {
+      width: 100px;
+      margin: auto;
+    }
+    footer {
+      font-size: 20px;
+      height: 40vh;
+      width: 100vw;
+    }
+    #arriba {
+      font-size: 25px;
+    }
+  }
+  
+  /*TABLET*/
+  @media (max-width: 768px) {
+    #logo {
+      width: 30vw;
+      margin-top: 10vh;
+    }
+    header {
+      height: 25vh;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30vh;
+      margin-bottom: 20vh;
+      margin-right: 5vw;
+    }
+    .itemList {
+      font-size: 15px;
+      padding: 10px;
+    }
+    .dropdown {
+      margin-right: 40px;
+    }
+    #imagenGrande {
+      margin-top: 60vh;
+    }
+    .tituloArticulos {
+      font-size: 45px;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+    }
+    .titulo1 {
+      font-size: 45px;
+      margin-top: 60vh;
+    }
+    .cajasArticulos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+    .articulo {
+      font-size: 15px;
+      width: 350px;
+      height: 250px;
+      padding: 10px;
+    }
+    h2 {
+      font-size: 30px;
+      padding-top: 5px;
+    }
+    h3 {
+      font-size: 15px;
+      text-align: left;
+      margin: 15px;
+    }
+    .cajasRecetas {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .recetaImagen {
+      width: 30vw;
+      padding: 0;
+    }
+    .cajasProductos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .cuadrosProductos {
+      margin: auto;
+    }
+    .cuadrosProductos img {
+      width: 30vw;
+      height: 30vh;
+    }
+    .tresProductosNuevos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .productosNuevos img {
+      width: 40vw;
+    }
+    .topTenCaja {
+      margin: 5px;
+    }
+    .topTen {
+      font-size: 17px;
+      text-align: left;
+      font-weight: bold;
+    }
+    .recetas2 {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      height: 0;
+      margin: auto;
+      margin-bottom: 20%;
+      padding-bottom: 50%;
+    }
+    .videosRecetas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .textoLinea {
+      font-size: 15px;
+      margin-left: 0;
+    }
+    .shadow-lg {
+      margin: 0;
+    }
+    .cajaNegocio {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .imagenNegocio1 img {
+      width: 85vw;
+      height: 70vh;
+      padding-left: 5vw;
+    }
+    .imagenNegocio2 img {
+      width: 85vw;
+      height: 70vh;
+      padding-left: 5vw;
+    }
+    .mapaNegocio iframe {
+      width: 80vw;
+      height: 60vh;
+      padding-left: 25vw;
+    }
+    .row {
+      margin-top: 9vh;
+      margin-left: 50vh;
+    }
+    .btn {
+      width: 100px;
+      margin: auto;
+    }
+    footer {
+      font-size: 15px;
+      height: 40vh;
+      width: 100vw;
+    }
+    #arriba {
+      font-size: 15px;
+    }
+  }
+  
+  /*MOBILE*/
+  @media (max-width: 425px) {
+    #logo {
+      width: 40vw;
+      margin-top: 15vh;
+      margin-left: 7vw;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30vh;
+      margin-right: 5vw;
+    }
+    .list__itemList {
+      font-size: 15px;
+      padding: 11px;
+      margin: 0%;
+    }
+    .dropdown {
+      margin-right: 40px;
+    }
+    #imagenGrande {
+      width: 90%;
+      margin-top: 60vh;
+      margin-bottom: 10px;
+    }
+    .tituloArticulos {
+      font-size: 30px;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+    }
+    .titulo1 {
+      font-size: 25px;
+      margin-top: 60vh;
+    }
+    .tituloContactanos {
+      font-size: 25px;
+      margin-top: 55vh;
+    }
+    h2 {
+      font-size: 20px;
+      padding-top: 5px;
+      margin: 5vh;
+    }
+    .titulo2 {
+      font-size: 20px;
+    }
+    .cajasArticulos {
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 0;
+      justify-content: center;
+    }
+    .articulo {
+      width: 60%;
+      height: 60%;
+      margin: auto;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    h3 {
+      font-size: 15px;
+      margin: 10px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .cajasRecetas {
+      display: flex;
+      flex-direction: column;
+    }
+    .recetas img {
+      width: 100%;
+      height: 50%;
+      padding: 0;
+    }
+    .cajasProductos {
+      display: flex;
+      flex-direction: column;
+    }
+    .cuadrosProductos {
+      margin: auto;
+    }
+    .cuadrosProductos img {
+      width: 60vw;
+      height: 40vh;
+    }
+    .tresProductosNuevos {
+      display: flex;
+      flex-direction: column;
+    }
+    .productosNuevos img {
+      width: 50vw;
+    }
+    .topTen {
+      padding: 15px;
+      font-size: 13px;
+      text-align: left;
+      font-weight: bold;
+      display: inline-block;
+      padding: 0;
+    }
+    .cajasRecetas {
+      display: flex;
+      flex-direction: column;
+    }
+    .recetas2 {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      height: 0;
+      margin: auto;
+      margin-bottom: 20%;
+      padding-bottom: 60%;
+    }
+    .videosRecetas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .textoLinea {
+      font-size: 15px;
+      margin-left: 0;
+    }
+    .shadow-lg {
+      margin: 0;
+    }
+    .cajaNegocio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .imagenNegocio1 img {
+      width: 80vw;
+      height: 30vh;
+      padding-left: 0;
+    }
+    .imagenNegocio2 img {
+      width: 80vw;
+      height: 30vh;
+      padding-left: 0;
+    }
+    .textoNegocio {
+      width: 80vw;
+      padding-left: 0;
+      margin-left: 20px;
+    }
+    .mapaNegocio iframe {
+      width: 80vw;
+      height: 50vh;
+      padding-left: 5vw;
+      padding-right: 0;
+    }
+    .row {
+      margin-top: 9vh;
+      margin-left: 3vh;
+      margin-right: 3vh;
+    }
+    .btn {
+      width: 100px;
+      margin: auto;
+    }
+    footer {
+      font-size: 15px;
+      height: 40vh;
+    }
+    #arriba {
+      font-size: 15px;
+    }
+  }
+  
