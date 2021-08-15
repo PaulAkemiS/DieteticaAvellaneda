@@ -61,7 +61,7 @@ body {
           color: #baa14f; }
         body #header #headerGrid .list .list__temSubmenu:hover > .dropdown-menu {
           display: block; }
-  body .imagenGrande {
+  body #imagenGrande {
     display: block;
     margin: auto;
     margin-top: 250px;
