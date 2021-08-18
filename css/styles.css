@@ -19,9 +19,7 @@ body .tituloArticulos, body .titulo1 {
 body {
   background-color: white;
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  /*LAPTOP*/
-  /*TABLET*/ }
+  position: relative; }
   body #header {
     background-image: url("../Imagenes/FondoCompleto.jpeg");
     background-size: cover;
@@ -68,15 +66,18 @@ body {
           list-style-type: none;
           padding: 20px; }
           @media (max-width: 1024px) {
-            body #header #headerGrid .list .list__itemList .list__itemSubmenu {
-              padding-right: 20px; } }
+            body #header #headerGrid .list .list__itemList .dropdown {
+              margin-right: 40px; } }
+          @media (max-width: 768px) {
+            body #header #headerGrid .list .list__itemList .dropdown {
+              margin-right: 40px; } }
+          @media (max-width: 425px) {
+            body #header #headerGrid .list .list__itemList .dropdown {
+              margin-right: 40px; } }
           @media (max-width: 1024px) {
             body #header #headerGrid .list .list__itemList {
-              font-size: 18px;
-              padding: 30px; } }
-          @media (max-width: 768px) {
-            body #header #headerGrid .list .list__itemList {
-              font-size: 50px; } }
+              font-size: 16px;
+              padding: 10px; } }
           @media (max-width: 768px) {
             body #header #headerGrid .list .list__itemList {
               font-size: 15px;
@@ -98,13 +99,10 @@ body {
             margin-top: 30vh; } }
         @media (max-width: 768px) {
           body #header #headerGrid .list {
-            font-size: 15px; } }
-        @media (max-width: 768px) {
-          body #header #headerGrid .list {
             display: flex;
             flex-direction: column;
             margin-top: 30vh;
-            margin-bottom: 15vh;
+            margin-bottom: 20vh;
             margin-right: 5vw; } }
         @media (max-width: 425px) {
           body #header #headerGrid .list {
@@ -112,18 +110,6 @@ body {
             flex-direction: column;
             margin-top: 30vh;
             margin-right: 5vw; } }
-      @media (max-width: 1024px) {
-        body #header #headerGrid {
-          margin-right: 60px; } }
-      @media (max-width: 768px) {
-        body #header #headerGrid {
-          margin-right: 40px; } }
-      @media (max-width: 768px) {
-        body #header #headerGrid {
-          margin-right: 40px; } }
-      @media (max-width: 425px) {
-        body #header #headerGrid {
-          margin-right: 40px; } }
     @media (max-width: 768px) {
       body #header {
         height: 25vh; } }
@@ -186,13 +172,17 @@ body {
     grid-row-gap: 70px;
     justify-items: center; }
     body .cajasArticulos .nuevosProductos {
-      grid-area: nuevosProductos; }
+      grid-area: nuevosProductos;
+      text-decoration: none; }
     body .cajasArticulos .top10 {
-      grid-area: top10DeProductos; }
+      grid-area: top10DeProductos;
+      text-decoration: none; }
     body .cajasArticulos .experiencias {
-      grid-area: experiencias; }
+      grid-area: experiencias;
+      text-decoration: none; }
     body .cajasArticulos .nuestroLocal {
-      grid-area: nuestroLocal; }
+      grid-area: nuestroLocal;
+      text-decoration: none; }
     body .cajasArticulos .articulo {
       font-size: 25px;
       width: 40vw;
@@ -808,87 +798,3 @@ body {
     body .pie {
       font-size: 15px;
       height: 35vh; } }
-  @media (max-width: 1024px) {
-    body h2 {
-      font-size: 30px;
-      padding-top: 5px; }
-    body h3 {
-      font-size: 20px;
-      text-align: left; }
-    body .row {
-      margin-top: 9vh;
-      margin-left: 35vw; }
-    body .btn {
-      width: 100px;
-      margin: auto; }
-    body footer {
-      font-size: 20px;
-      height: 40vh;
-      width: 100vw; }
-    body #arriba {
-      font-size: 25px; } }
-  @media (max-width: 768px) {
-    body {
-      /*MOBILE*/ }
-      body .titulo1 {
-        font-size: 45px;
-        margin-top: 60vh; }
-      body h2 {
-        font-size: 30px;
-        padding-top: 5px; }
-      body h3 {
-        font-size: 15px;
-        text-align: left;
-        margin: 15px; }
-      body .row {
-        margin-top: 9vh;
-        margin-left: 50vh; }
-      body .btn {
-        width: 100px;
-        margin: auto; } }
-  @media (max-width: 768px) and (max-width: 425px) {
-    body .titulo1 {
-      font-size: 25px;
-      margin-top: 60vh; }
-    body .tituloContactanos {
-      font-size: 25px;
-      margin-top: 55vh; }
-    body h2 {
-      font-size: 20px;
-      padding-top: 5px;
-      margin: 5vh; }
-    body .titulo2 {
-      font-size: 20px; }
-    body h3 {
-      font-size: 15px;
-      margin: 10px;
-      text-align: center;
-      margin-bottom: 5px; }
-    body .cajaNegocio {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-    body .imagenNegocio1 img {
-      width: 80vw;
-      height: 30vh;
-      padding-left: 0; }
-    body .imagenNegocio2 img {
-      width: 80vw;
-      height: 30vh;
-      padding-left: 0; }
-    body .textoNegocio {
-      width: 80vw;
-      padding-left: 0;
-      margin-left: 20px; }
-    body .mapaNegocio iframe {
-      width: 80vw;
-      height: 50vh;
-      padding-left: 5vw;
-      padding-right: 0; }
-    body .row {
-      margin-top: 9vh;
-      margin-left: 3vh;
-      margin-right: 3vh; }
-    body .btn {
-      width: 100px;
-      margin: auto; } }
