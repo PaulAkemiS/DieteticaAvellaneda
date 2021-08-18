@@ -3,13 +3,8 @@ body #header #headerGrid .list .list__itemList {
   color: black;
   text-decoration: none; }
 
-body .topTenCaja, body .texto .texto__textoLinea {
-  box-shadow: 17px 11px 37px 23px rgba(253, 214, 152, 0.75);
-  -webkit-box-shadow: 17px 11px 37px 23px rgba(253, 214, 152, 0.75);
-  -moz-box-shadow: 17px 11px 37px 23px rgba(253, 214, 152, 0.75); }
-
 body .tituloArticulos, body .titulo1 {
-  font-size: 50px;
+  font-size: 4rem;
   text-align: center;
   color: #bac751;
   font-weight: bolder; }
@@ -24,10 +19,7 @@ body .tituloArticulos, body .titulo1 {
 body {
   background-color: white;
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  /*LAPTOP*/
-  /*TABLET*/
-  /*MOBILE*/ }
+  position: relative; }
   body #header {
     background-image: url("../Imagenes/FondoCompleto.jpeg");
     background-size: cover;
@@ -46,6 +38,23 @@ body {
         margin-left: 7vw;
         margin-bottom: 15vh;
         grid-area: logo; }
+        @media (max-width: 1024px) {
+          body #header #headerGrid #logo {
+            width: 22vw; } }
+        @media (max-width: 768px) {
+          body #header #headerGrid #logo {
+            width: 30vw;
+            margin-top: 10vh;
+            margin-bottom: 20vh; } }
+        @media (max-width: 425px) {
+          body #header #headerGrid #logo {
+            width: 35vw;
+            margin-top: 15vh; } }
+        @media (max-width: 425px) {
+          body #header #headerGrid #logo {
+            width: 40vw;
+            margin-top: 15vh;
+            margin-left: 7vw; } }
       body #header #headerGrid .list {
         text-align: end;
         margin-top: 25%;
@@ -57,6 +66,28 @@ body {
         body #header #headerGrid .list .list__itemList {
           list-style-type: none;
           padding: 20px; }
+          @media (max-width: 1024px) {
+            body #header #headerGrid .list .list__itemList .dropdown {
+              margin-right: 40px; } }
+          @media (max-width: 768px) {
+            body #header #headerGrid .list .list__itemList .dropdown {
+              margin-right: 40px; } }
+          @media (max-width: 425px) {
+            body #header #headerGrid .list .list__itemList .dropdown {
+              margin-right: 40px; } }
+          @media (max-width: 1024px) {
+            body #header #headerGrid .list .list__itemList {
+              font-size: 16px;
+              padding: 10px; } }
+          @media (max-width: 768px) {
+            body #header #headerGrid .list .list__itemList {
+              font-size: 15px;
+              padding: 10px; } }
+          @media (max-width: 425px) {
+            body #header #headerGrid .list .list__itemList {
+              font-size: 15px;
+              padding: 11px;
+              margin: 0%; } }
         body #header #headerGrid .list .list__itemList a {
           color: black;
           text-decoration: none; }
@@ -64,22 +95,74 @@ body {
           color: #baa14f; }
         body #header #headerGrid .list .list__temSubmenu:hover > .dropdown-menu {
           display: block; }
+        @media (max-width: 1024px) {
+          body #header #headerGrid .list {
+            margin-top: 30vh; } }
+        @media (max-width: 768px) {
+          body #header #headerGrid .list {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30vh;
+            margin-right: 5vw; } }
+        @media (max-width: 425px) {
+          body #header #headerGrid .list {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30vh;
+            margin-right: 5vw; } }
+    @media (max-width: 768px) {
+      body #header {
+        height: 25vh; } }
   body #imagenGrande {
     display: block;
     margin: auto;
-    margin-top: 250px;
+    margin-top: 20rem;
     grid-area: imagen;
     width: 70%; }
+  @media (max-width: 1024px) {
+    body #imagenGrande {
+      margin-top: 20%; } }
+  @media (max-width: 768px) {
+    body #imagenGrande {
+      margin-top: 17rem; } }
+  @media (max-width: 425px) {
+    body #imagenGrande {
+      width: 90%;
+      margin-top: 60vh;
+      margin-bottom: 10px; } }
   body .tituloArticulos {
     margin: 50px;
     margin-top: 25vh;
     border-bottom: #bac751 solid 4px; }
+    @media (max-width: 768px) {
+      body .tituloArticulos {
+        font-size: 3rem;
+        margin-top: 20vh;
+        margin-bottom: 10vh; } }
+    @media (max-width: 425px) {
+      body .tituloArticulos {
+        font-size: 2rem;
+        margin-top: 10vh;
+        margin-bottom: 10vh; } }
   body .titulo2 {
     color: #4c8530;
-    text-decoration: underline;
     text-align: center;
     font-size: 30px;
-    margin: 40px; }
+    margin: 20px; }
+    @media (max-width: 1024px) {
+      body .titulo2 {
+        font-size: 30px;
+        padding-top: 5px;
+        margin-top: 5px; } }
+    @media (max-width: 768px) {
+      body .titulo2 {
+        font-size: 20px;
+        padding-top: 5px; } }
+    @media (max-width: 425px) {
+      body .titulo2 {
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 5vh; } }
   body .cajasArticulos {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -89,13 +172,17 @@ body {
     grid-row-gap: 70px;
     justify-items: center; }
     body .cajasArticulos .nuevosProductos {
-      grid-area: nuevosProductos; }
+      grid-area: nuevosProductos;
+      text-decoration: none; }
     body .cajasArticulos .top10 {
-      grid-area: top10DeProductos; }
+      grid-area: top10DeProductos;
+      text-decoration: none; }
     body .cajasArticulos .experiencias {
-      grid-area: experiencias; }
+      grid-area: experiencias;
+      text-decoration: none; }
     body .cajasArticulos .nuestroLocal {
-      grid-area: nuestroLocal; }
+      grid-area: nuestroLocal;
+      text-decoration: none; }
     body .cajasArticulos .articulo {
       font-size: 25px;
       width: 40vw;
@@ -107,12 +194,61 @@ body {
       color: black;
       background-image: url("../Imagenes/Prueba12.jpg");
       background-size: cover; }
+    body .cajasArticulos .articulo a {
+      text-decoration: none; }
+    @media (max-width: 1024px) {
+      body .cajasArticulos .articulo {
+        font-size: 20px;
+        width: 40vw;
+        height: 300px;
+        margin-left: 10px; } }
+    @media (max-width: 768px) {
+      body .cajasArticulos .articulo {
+        font-size: 15px;
+        width: 350px;
+        height: 250px;
+        padding: 10px; } }
+    @media (max-width: 425px) {
+      body .cajasArticulos .articulo {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+        font-size: 15px; } }
+    @media (max-width: 425px) {
+      body .cajasArticulos .articulo {
+        width: 90%; } }
+    @media (max-width: 768px) {
+      body .cajasArticulos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 20px; } }
+    @media (max-width: 425px) {
+      body .cajasArticulos {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 0;
+        justify-content: center; } }
   body .titulo2 {
     color: #4c8530;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
     margin: 40px; }
+    @media (max-width: 1024px) {
+      body .titulo2 {
+        font-size: 30px;
+        padding-top: 5px; } }
+    @media (max-width: 768px) {
+      body .titulo2 {
+        font-size: 30px;
+        padding-top: 5px;
+        margin: 0; } }
+    @media (max-width: 425px) {
+      body .titulo2 {
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 5vh; } }
   body .cajasRecetas {
     align-items: center;
     margin-bottom: 60px;
@@ -120,52 +256,145 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: nowrap; }
+    @media (max-width: 425px) {
+      body .cajasRecetas .recetas {
+        width: 80%;
+        padding-left: 15vw;
+        margin: 10px; } }
     body .cajasRecetas .recetas a {
       font-size: 25px;
       margin: 15px;
       color: #5d6329;
-      text-align: end;
       text-decoration: none;
       padding-left: 10vh; }
+      @media (max-width: 1024px) {
+        body .cajasRecetas .recetas a {
+          font-size: 20px;
+          font-weight: bold;
+          padding-left: 40px; } }
+      @media (max-width: 768px) {
+        body .cajasRecetas .recetas a {
+          font-size: 15px;
+          font-weight: bold;
+          padding-left: 3vw; } }
+      @media (max-width: 425px) {
+        body .cajasRecetas .recetas a {
+          padding-left: 4px; } }
+      @media (max-width: 425px) {
+        body .cajasRecetas .recetas a {
+          font-size: 15px;
+          padding-left: 5vw; } }
     body .cajasRecetas .recetaImagen {
-      width: 27vw;
-      height: 38vh;
-      transition: 0.5s; }
-    body .cajasRecetas .recetaImagen:hover {
-      width: 32vw;
-      height: 43vh; }
+      width: 27vw; }
+      @media (max-width: 1024px) {
+        body .cajasRecetas .recetaImagen {
+          width: 30vw;
+          padding-right: 50px; } }
+      @media (max-width: 768px) {
+        body .cajasRecetas .recetaImagen {
+          width: 30vw;
+          padding-left: 10px; } }
+      @media (max-width: 425px) {
+        body .cajasRecetas .recetaImagen {
+          width: 35vw;
+          padding-left: 0px; } }
+      @media (max-width: 425px) {
+        body .cajasRecetas .recetaImagen {
+          width: 50vw;
+          padding-right: 0px; } }
+      @media (max-width: 425px) {
+        body .cajasRecetas .recetaImagen {
+          width: 75vw;
+          padding-right: 70px; } }
+    @media (max-width: 1024px) {
+      body .cajasRecetas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%; } }
+    @media (max-width: 768px) {
+      body .cajasRecetas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; } }
+    @media (max-width: 425px) {
+      body .cajasRecetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto; } }
   body .titulo1 {
     margin: 50px;
     margin-top: 25vh;
     border-bottom: #bac751 solid 4px; }
-  body .titulo1-modifier {
-    margin-top: 40vh; }
+    @media (max-width: 1024px) {
+      body .titulo1 {
+        font-size: 4rem;
+        margin-top: 30vh; } }
+    @media (max-width: 768px) {
+      body .titulo1 {
+        font-size: 3rem;
+        margin-top: 60vh; } }
+    @media (max-width: 425px) {
+      body .titulo1 {
+        font-size: 2rem;
+        margin-top: 60vh; } }
   body .cajasProductos {
+    align-items: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center; }
-    body .cajasProductos .cuadrosProductos {
+    flex-wrap: wrap; }
+    body .cajasProductos .cajasProductos__cuadrosProductos img {
+      width: 15rem;
       margin: 15px;
       text-align: center; }
+      @media (max-width: 768px) {
+        body .cajasProductos .cajasProductos__cuadrosProductos img {
+          width: 12rem; } }
   body .titulo2 {
     color: #4c8530;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
     margin: 40px; }
+    @media (max-width: 768px) {
+      body .titulo2 {
+        font-size: 30px;
+        padding-top: 5px; } }
+    @media (max-width: 425px) {
+      body .titulo2 {
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 5vh; } }
   body .titulo3 {
     color: #f8bf0a;
     font-size: 30px;
     margin: 30px;
     text-align: center; }
+    @media (max-width: 1024px) {
+      body .titulo3 {
+        font-size: 20px;
+        text-align: left; } }
+    @media (max-width: 768px) {
+      body .titulo3 {
+        font-size: 15px;
+        text-align: left;
+        margin: 15px; } }
+    @media (max-width: 425px) {
+      body .titulo3 {
+        font-size: 15px;
+        margin: 10px;
+        text-align: center;
+        margin-bottom: 5px; } }
   body .tresProductosNuevos {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: nowrap; }
-    body .tresProductosNuevos .tresProductosNuevos__productosNuevos {
+    flex-wrap: wrap; }
+    body .tresProductosNuevos .productosNuevos {
       margin: 15px;
       text-align: center;
       animation: pulse;
@@ -173,6 +402,11 @@ body {
       color: #f8bf0a;
       font-size: 20px;
       font-weight: bold; }
+      body .tresProductosNuevos .productosNuevos .nuevoProducto {
+        width: 15rem; }
+        @media (max-width: 768px) {
+          body .tresProductosNuevos .productosNuevos .nuevoProducto {
+            width: 12rem; } }
   body .topTenCaja {
     margin: 100px; }
     body .topTenCaja .topTenCaja__lista10 {
@@ -181,41 +415,154 @@ body {
       text-align: left;
       font-weight: bold;
       display: inline-block; }
+      @media (max-width: 1024px) {
+        body .topTenCaja .topTenCaja__lista10 {
+          font-size: 20px;
+          text-align: left;
+          font-weight: bold; } }
+      @media (max-width: 768px) {
+        body .topTenCaja .topTenCaja__lista10 {
+          font-size: 17px;
+          text-align: left;
+          font-weight: bold; } }
     body .topTenCaja .topTenCaja__lista10 li {
       list-style: decimal;
       line-height: 50px; }
+    @media (max-width: 1024px) {
+      body .topTenCaja {
+        margin: 5px; } }
+    @media (max-width: 768px) {
+      body .topTenCaja {
+        margin: 5px; } }
   body .titulo1 {
     margin: 50px;
     margin-top: 25vh;
     border-bottom: #bac751 solid 4px; }
-  body .titulo1-modifier {
-    margin-top: 40vh; }
+    @media (max-width: 1024px) {
+      body .titulo1 {
+        font-size: 4rem;
+        margin-top: 30vh; } }
+    @media (max-width: 768px) {
+      body .titulo1 {
+        font-size: 3rem;
+        margin-top: 60vh; } }
+    @media (max-width: 425px) {
+      body .titulo1 {
+        font-size: 2rem;
+        margin-top: 60vh; } }
   body .cajasRecetas {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 60px; }
-    body .cajasRecetas .cajasRecetas__recetas {
-      font-size: 25px;
-      margin: 15px;
-      color: #5d6329;
-      text-align: center; }
-    body .cajasRecetas .cajasRecetas__videosRecetas {
-      margin-left: 5%; }
+    body .cajasRecetas .recetas2 {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      height: 0;
+      margin-bottom: 0;
+      padding-bottom: 30%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      body .cajasRecetas .recetas2 .videosRecetas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90%; }
+        @media (max-width: 1024px) {
+          body .cajasRecetas .recetas2 .videosRecetas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; } }
+        @media (max-width: 768px) {
+          body .cajasRecetas .recetas2 .videosRecetas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; } }
+        @media (max-width: 425px) {
+          body .cajasRecetas .recetas2 .videosRecetas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; } }
+      @media (max-width: 1024px) {
+        body .cajasRecetas .recetas2 {
+          position: relative;
+          width: 100%;
+          max-width: 500px;
+          height: 0;
+          margin: auto;
+          margin-bottom: 7%;
+          padding-bottom: 40%; } }
+      @media (max-width: 768px) {
+        body .cajasRecetas .recetas2 {
+          position: relative;
+          width: 100%;
+          max-width: 500px;
+          height: 0;
+          margin: auto;
+          margin-bottom: 5rem; } }
+      @media (max-width: 425px) {
+        body .cajasRecetas .recetas2 {
+          position: relative;
+          width: 100%;
+          max-width: 300px;
+          height: 0;
+          margin: auto;
+          margin-bottom: 20%;
+          padding-bottom: 60%; } }
   body .titulo2 {
     color: #4c8530;
     text-decoration: underline;
     text-align: center;
     font-size: 30px;
     margin: 40px; }
+    @media (max-width: 1024px) {
+      body .titulo2 {
+        font-size: 30px;
+        padding-top: 5px; } }
+    @media (max-width: 768px) {
+      body .titulo2 {
+        font-size: 30px;
+        padding-top: 5px; } }
+    @media (max-width: 425px) {
+      body .titulo2 {
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 5vh; } }
   body .titulo3 {
     color: #f8bf0a;
     font-size: 30px;
     margin: 30px;
     text-align: center; }
+    @media (max-width: 1024px) {
+      body .titulo3 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center; } }
+    @media (max-width: 768px) {
+      body .titulo3 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 15px; } }
+    @media (max-width: 425px) {
+      body .titulo3 {
+        font-size: 15px;
+        margin: 20px;
+        text-align: center;
+        margin-bottom: 20px; } }
   body .texto {
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 600;
     margin: 30px;
     padding: 10px; }
     body .texto .texto__textoLinea {
@@ -223,18 +570,53 @@ body {
       border-left: solid black 1px;
       padding: 10px;
       margin: 20px; }
+      @media (max-width: 1024px) {
+        body .texto .texto__textoLinea {
+          font-size: 20px;
+          margin-left: 0; } }
+      @media (max-width: 768px) {
+        body .texto .texto__textoLinea {
+          font-size: 15px;
+          margin-left: 0; } }
+      @media (max-width: 425px) {
+        body .texto .texto__textoLinea {
+          font-size: 15px;
+          margin-left: 0; } }
   body .titulo1 {
     margin: 50px;
     margin-top: 25vh;
     border-bottom: #bac751 solid 4px; }
-  body .titulo1-modifier {
-    margin-top: 40vh; }
+    @media (max-width: 1024px) {
+      body .titulo1 {
+        font-size: 4rem;
+        margin-top: 30vh; } }
+    @media (max-width: 768px) {
+      body .titulo1 {
+        font-size: 3rem;
+        margin-top: 60vh; } }
+    @media (max-width: 425px) {
+      body .titulo1 {
+        font-size: 2rem;
+        margin-top: 60vh; } }
   body .titulo2 {
     color: #4c8530;
     text-decoration: underline;
     text-align: center;
     font-size: 30px;
     margin: 40px; }
+    @media (max-width: 1024px) {
+      body .titulo2 {
+        font-size: 30px;
+        padding-top: 5px; } }
+    @media (max-width: 768px) {
+      body .titulo2 {
+        font-size: 30px;
+        padding-top: 5px; } }
+    @media (max-width: 425px) {
+      body .titulo2 {
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 5vh; } }
   body .texto {
     font-size: 15px;
     margin: 30px;
@@ -250,9 +632,41 @@ body {
     margin-top: 100px;
     margin-bottom: 100px; }
     body .cajaNegocio .cajaNegocio__imagenNegocio1 {
+      width: 40vw;
       grid-area: imagenNegocio1; }
+      @media (max-width: 1024px) {
+        body .cajaNegocio .cajaNegocio__imagenNegocio1 {
+          width: 40vw;
+          display: flex;
+          flex-direction: column; } }
+      @media (max-width: 768px) {
+        body .cajaNegocio .cajaNegocio__imagenNegocio1 {
+          width: 60vw;
+          margin-left: 20vw; } }
+      @media (max-width: 425px) {
+        body .cajaNegocio .cajaNegocio__imagenNegocio1 {
+          width: 80vw;
+          display: flex;
+          flex-direction: column;
+          margin-left: 3rem; } }
     body .cajaNegocio .cajaNegocio__imagenNegocio2 {
+      width: 40vw;
       grid-area: imagenNegocio2; }
+      @media (max-width: 1024px) {
+        body .cajaNegocio .cajaNegocio__imagenNegocio2 {
+          width: 40vw;
+          display: flex;
+          flex-direction: column; } }
+      @media (max-width: 768px) {
+        body .cajaNegocio .cajaNegocio__imagenNegocio2 {
+          width: 60vw;
+          margin-left: 20vw; } }
+      @media (max-width: 425px) {
+        body .cajaNegocio .cajaNegocio__imagenNegocio2 {
+          width: 80vw;
+          display: flex;
+          flex-direction: column;
+          margin-left: 3rem; } }
     body .cajaNegocio .cajaNegocio__texto {
       font-size: 15px;
       margin: 30px;
@@ -262,14 +676,55 @@ body {
       grid-area: textoNegocio;
       text-align: left;
       transition: 0.5s; }
+      @media (max-width: 768px) {
+        body .cajaNegocio .cajaNegocio__textoNegocio {
+          margin-left: 23vw; } }
+      @media (max-width: 425px) {
+        body .cajaNegocio .cajaNegocio__textoNegocio {
+          width: 70vw;
+          margin-left: 2rem;
+          font-size: 15px; } }
     body .cajaNegocio .cajaNegocio__textoNegocio:hover {
       font-size: 25px; }
+    @media (max-width: 1024px) {
+      body .cajaNegocio .cajaNegocio__mapaNegocio iframe {
+        width: 50vw;
+        padding-left: 8vw; } }
+    @media (max-width: 768px) {
+      body .cajaNegocio .cajaNegocio__mapaNegocio iframe {
+        width: 80vw;
+        padding-left: 25vw; } }
+    @media (max-width: 425px) {
+      body .cajaNegocio .cajaNegocio__mapaNegocio iframe {
+        width: 90vw;
+        padding-left: 3rem; } }
+    @media (max-width: 768px) {
+      body .cajaNegocio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; } }
+    @media (max-width: 425px) {
+      body .cajaNegocio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; } }
   body .titulo1 {
     margin: 50px;
-    margin-top: 25vh;
+    margin-top: 40vh;
     border-bottom: #bac751 solid 4px; }
-  body .titulo1-modifier {
-    margin-top: 40vh; }
+    @media (max-width: 1024px) {
+      body .titulo1 {
+        font-size: 4rem;
+        margin-top: 30vh; } }
+    @media (max-width: 768px) {
+      body .titulo1 {
+        font-size: 3rem;
+        margin-top: 60vh; } }
+    @media (max-width: 425px) {
+      body .titulo1 {
+        font-size: 2rem;
+        margin-top: 60vh;
+        margin-left: 30px; } }
   body .recuadro {
     display: flex;
     flex-direction: column;
@@ -279,15 +734,35 @@ body {
       font-size: 30px;
       text-align: left;
       margin-bottom: 20px; }
+      @media (max-width: 768px) {
+        body .recuadro .recuadro__form-label {
+          font-size: 25px; } }
+      @media (max-width: 425px) {
+        body .recuadro .recuadro__form-label {
+          font-size: 20px; } }
     body .recuadro .recuadro__form-label-select {
       color: black;
       font-size: 20px; }
+      @media (max-width: 425px) {
+        body .recuadro .recuadro__form-label-select {
+          font-size: 15px; } }
     body .recuadro .recuadro__cajaTexto {
       width: 25vw;
-      height: 5vh;
+      font-size: 20px;
       margin-bottom: 15px; }
+      @media (max-width: 768px) {
+        body .recuadro .recuadro__cajaTexto {
+          font-size: 15px; } }
+      @media (max-width: 425px) {
+        body .recuadro .recuadro__cajaTexto {
+          width: 15rem; } }
     body .recuadro .recuadro__cajaTexto-checkBox {
       width: 20px; }
+    body .recuadro .recuadro__form-label-cuadro {
+      width: 20rem; }
+      @media (max-width: 425px) {
+        body .recuadro .recuadro__form-label-cuadro {
+          width: 15rem; } }
     body .recuadro .btn-orange {
       color: white;
       background-color: #f8bf0a;
@@ -295,8 +770,19 @@ body {
       height: 7vh;
       margin: 20px;
       margin-bottom: 20vh; }
+      @media (max-width: 425px) {
+        body .recuadro .btn-orange {
+          width: 7rem;
+          margin: auto; } }
     body .recuadro .btn-rounded {
       border-radius: 15%; }
+    @media (max-width: 1024px) {
+      body .recuadro {
+        margin-left: 40vh;
+        padding-left: 2rem; } }
+    @media (max-width: 425px) {
+      body .recuadro {
+        margin-left: 1rem; } }
   body .pie {
     background-image: url("../Imagenes/FondoCompleto.jpeg");
     background-size: cover;
@@ -307,347 +793,25 @@ body {
     grid-area: footer; }
     body .pie .pie__arriba {
       text-align: right;
-      font-size: 30px;
       margin-top: 10px; }
     body .pie .pie__arriba a {
-      color: #5d6329; }
+      color: #5d6329;
+      font-size: 30px; }
+    @media (max-width: 768px) {
+      body .pie .pie__arriba a {
+        font-size: 25px; } }
+    @media (max-width: 425px) {
+      body .pie .pie__arriba a {
+        font-size: 20px; } }
   @media (max-width: 1024px) {
-    body #logo {
-      width: 22vw; }
-    body .list {
-      margin-top: 30vh; }
-    body .lis__itemList {
-      font-size: 16px;
-      padding: 10px; }
-    body .dropdown {
-      margin-right: 40px; }
-    body #imagenGrande {
-      margin-top: 20%; }
-    body .articulo {
-      font-size: 15px;
-      width: 40vw;
-      height: 300px; }
-    body h2 {
-      font-size: 30px;
-      padding-top: 5px; }
-    body h3 {
+    body .pie {
       font-size: 20px;
-      text-align: left; }
-    body .cajasRecetas {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center; }
-    body .tresProductosNuevos {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-    body .productosNuevos img {
-      width: 40vw; }
-    body .topTenCaja {
-      margin: 5px; }
-    body .topTen {
-      font-size: 17px;
-      text-align: left;
-      font-weight: bold; }
-    body .cajasRecetas {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-    body .recetas {
-      width: 30vw; }
-    body .recetas2 {
-      position: relative;
-      width: 100%;
-      max-width: 500px;
-      height: 0;
-      margin: auto;
-      margin-bottom: 20%;
-      padding-bottom: 40%; }
-    body .videosRecetas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-    body .textoLinea {
-      font-size: 15px;
-      margin-left: 0; }
-    body .shadow-lg {
-      margin: 0; }
-    body .imagenNegocio1 img {
-      width: 40vw;
-      height: 30vh; }
-    body .imagenNegocio2 img {
-      width: 40vw;
-      height: 30vh;
-      padding-left: 0vw; }
-    body .mapaNegocio iframe {
-      width: 50vw;
-      height: 50vh;
-      padding-left: 8vw; }
-    body .row {
-      margin-top: 9vh;
-      margin-left: 35vw; }
-    body .btn {
-      width: 100px;
-      margin: auto; }
-    body footer {
-      font-size: 20px;
-      height: 40vh;
-      width: 100vw; }
-    body #arriba {
-      font-size: 25px; } }
+      height: 30vh; } }
   @media (max-width: 768px) {
-    body #logo {
-      width: 30vw;
-      margin-top: 10vh; }
-    body header {
-      height: 25vh; }
-    body .list {
-      display: flex;
-      flex-direction: column;
-      margin-top: 30vh;
-      margin-bottom: 20vh;
-      margin-right: 5vw; }
-    body .itemList {
+    body .pie {
       font-size: 15px;
-      padding: 10px; }
-    body .dropdown {
-      margin-right: 40px; }
-    body #imagenGrande {
-      margin-top: 60vh; }
-    body .tituloArticulos {
-      font-size: 45px;
-      margin-top: 10vh;
-      margin-bottom: 10vh; }
-    body .titulo1 {
-      font-size: 45px;
-      margin-top: 60vh; }
-    body .cajasArticulos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      grid-column-gap: 20px;
-      grid-row-gap: 20px; }
-    body .articulo {
-      font-size: 15px;
-      width: 350px;
-      height: 250px;
-      padding: 10px; }
-    body h2 {
-      font-size: 30px;
-      padding-top: 5px; }
-    body h3 {
-      font-size: 15px;
-      text-align: left;
-      margin: 15px; }
-    body .cajasRecetas {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-    body .recetaImagen {
-      width: 30vw;
-      padding: 0; }
-    body .cajasProductos {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-    body .cuadrosProductos {
-      margin: auto; }
-    body .cuadrosProductos img {
-      width: 30vw;
-      height: 30vh; }
-    body .tresProductosNuevos {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-    body .productosNuevos img {
-      width: 40vw; }
-    body .topTenCaja {
-      margin: 5px; }
-    body .topTen {
-      font-size: 17px;
-      text-align: left;
-      font-weight: bold; }
-    body .recetas2 {
-      position: relative;
-      width: 100%;
-      max-width: 500px;
-      height: 0;
-      margin: auto;
-      margin-bottom: 20%;
-      padding-bottom: 50%; }
-    body .videosRecetas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-    body .textoLinea {
-      font-size: 15px;
-      margin-left: 0; }
-    body .shadow-lg {
-      margin: 0; }
-    body .cajaNegocio {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-    body .imagenNegocio1 img {
-      width: 85vw;
-      height: 70vh;
-      padding-left: 5vw; }
-    body .imagenNegocio2 img {
-      width: 85vw;
-      height: 70vh;
-      padding-left: 5vw; }
-    body .mapaNegocio iframe {
-      width: 80vw;
-      height: 60vh;
-      padding-left: 25vw; }
-    body .row {
-      margin-top: 9vh;
-      margin-left: 50vh; }
-    body .btn {
-      width: 100px;
-      margin: auto; }
-    body footer {
-      font-size: 15px;
-      height: 40vh;
-      width: 100vw; }
-    body #arriba {
-      font-size: 15px; } }
+      height: 35vh; } }
   @media (max-width: 425px) {
-    body #logo {
-      width: 40vw;
-      margin-top: 15vh;
-      margin-left: 7vw; }
-    body .list {
-      display: flex;
-      flex-direction: column;
-      margin-top: 30vh;
-      margin-right: 5vw; }
-    body .list__itemList {
+    body .pie {
       font-size: 15px;
-      padding: 11px;
-      margin: 0%; }
-    body .dropdown {
-      margin-right: 40px; }
-    body #imagenGrande {
-      width: 90%;
-      margin-top: 60vh;
-      margin-bottom: 10px; }
-    body .tituloArticulos {
-      font-size: 30px;
-      margin-top: 10vh;
-      margin-bottom: 10vh; }
-    body .titulo1 {
-      font-size: 25px;
-      margin-top: 60vh; }
-    body .tituloContactanos {
-      font-size: 25px;
-      margin-top: 55vh; }
-    body h2 {
-      font-size: 20px;
-      padding-top: 5px;
-      margin: 5vh; }
-    body .titulo2 {
-      font-size: 20px; }
-    body .cajasArticulos {
-      display: flex;
-      flex-direction: column;
-      grid-row-gap: 0;
-      justify-content: center; }
-    body .articulo {
-      width: 60%;
-      height: 60%;
-      margin: auto;
-      margin-bottom: 10px;
-      font-size: 15px; }
-    body h3 {
-      font-size: 15px;
-      margin: 10px;
-      text-align: center;
-      margin-bottom: 5px; }
-    body .cajasRecetas {
-      display: flex;
-      flex-direction: column; }
-    body .recetas img {
-      width: 100%;
-      height: 50%;
-      padding: 0; }
-    body .cajasProductos {
-      display: flex;
-      flex-direction: column; }
-    body .cuadrosProductos {
-      margin: auto; }
-    body .cuadrosProductos img {
-      width: 60vw;
-      height: 40vh; }
-    body .tresProductosNuevos {
-      display: flex;
-      flex-direction: column; }
-    body .productosNuevos img {
-      width: 50vw; }
-    body .topTen {
-      padding: 15px;
-      font-size: 13px;
-      text-align: left;
-      font-weight: bold;
-      display: inline-block;
-      padding: 0; }
-    body .cajasRecetas {
-      display: flex;
-      flex-direction: column; }
-    body .recetas2 {
-      position: relative;
-      width: 100%;
-      max-width: 300px;
-      height: 0;
-      margin: auto;
-      margin-bottom: 20%;
-      padding-bottom: 60%; }
-    body .videosRecetas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-    body .textoLinea {
-      font-size: 15px;
-      margin-left: 0; }
-    body .shadow-lg {
-      margin: 0; }
-    body .cajaNegocio {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-    body .imagenNegocio1 img {
-      width: 80vw;
-      height: 30vh;
-      padding-left: 0; }
-    body .imagenNegocio2 img {
-      width: 80vw;
-      height: 30vh;
-      padding-left: 0; }
-    body .textoNegocio {
-      width: 80vw;
-      padding-left: 0;
-      margin-left: 20px; }
-    body .mapaNegocio iframe {
-      width: 80vw;
-      height: 50vh;
-      padding-left: 5vw;
-      padding-right: 0; }
-    body .row {
-      margin-top: 9vh;
-      margin-left: 3vh;
-      margin-right: 3vh; }
-    body .btn {
-      width: 100px;
-      margin: auto; }
-    body footer {
-      font-size: 15px;
-      height: 40vh; }
-    body #arriba {
-      font-size: 15px; } }
+      height: 35vh; } }

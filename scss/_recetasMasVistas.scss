@@ -4,33 +4,105 @@
     text-align: center;
     font-size: 30px;
     margin: 40px;
-  }
+
+    @media #{$laptop} {        
+        font-size: 30px;
+        padding-top: 5px;        
+    }  
+    @media #{$tablet} {       
+        font-size: 30px;
+        padding-top: 5px;
+        margin: 0;        
+    }
+    @media #{$mobile} {      
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 5vh;        
+    }
+}
 
 .cajasRecetas {
     align-items: center;
     margin-bottom: 60px;
 
-    @include flex(flex, row, space-evenly, nowrap)
-  
-    .recetas a{
+    .recetas {
+        @media #{$mobile} {             
+            width: 80%;
+            padding-left: 15vw;
+            margin: 10px;
+        }
+    }
+
+    .recetas a {
         font-size: 25px;
         margin: 15px;
         color: #5d6329;
-        text-align: end;
         text-decoration: none;
         padding-left: 10vh;
+
+        @media #{$laptop} {           
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 40px;            
+        }
+        @media #{$tablet} {           
+            font-size: 15px;
+            font-weight: bold;
+            padding-left: 3vw;            
+        }
+        @media #{$mobile+125} {           
+            padding-left: 4px;            
+        }
+        @media #{$mobile} {          
+            font-size: 15px;
+            padding-left: 5vw;            
+        }   
     }
-          
+      
     .recetaImagen {
         width: ($ancho/2)+2;
-        height: 38vh;
-        transition: 0.5s;
-    }
-  
-    .recetaImagen:hover {
-        width: ($ancho/2)+7;
-        height: 43vh;
+
+        @media #{$laptop} {            
+            width: 30vw;
+            padding-right: 50px;            
+        }
+        @media #{$tablet} {            
+            width: 30vw;
+            padding-left: 10px;            
+        }
+        @media #{$mobile+125} {             
+            width: 35vw;
+            padding-left: 0px;            
+        }
+        @media #{$mobile} {             
+            width: 50vw;
+            padding-right: 0px;            
+        }
+        @media #{$mobile -105} {             
+            width: 75vw;
+            padding-right: 70px;            
+        }
     }
     
+
+    @include flex(flex, row, space-evenly, nowrap);
+    
+    @media #{$laptop} {        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;        
+    }
+    @media #{$tablet} {        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+    @media #{$mobile} {     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;    
+    }
 }
-  

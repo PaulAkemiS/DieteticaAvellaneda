@@ -4,30 +4,53 @@
     border-bottom: #bac751 solid 4px;
 
     @extend %fontTitulo1;
-}
 
-.titulo1-modifier {
-    margin-top:40vh;
-}
-
-.cajasProductos {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-  
-    .cuadrosProductos {
-        margin: 15px;
-        text-align: center;
+    @media #{$laptop} {
+        font-size: 4rem;
+        margin-top: 30vh;
+    }
+    @media #{$tablet} {
+        font-size: 3rem;
+        margin-top: 60vh;
+    }
+    @media #{$mobile} {
+        font-size: 2rem;
+        margin-top: 60vh;
     }
 }
 
+.cajasProductos {
+    align-items: center;
+  
+    .cajasProductos__cuadrosProductos  img{
+        width: 15rem;
+        margin: 15px;
+        text-align: center;
+
+        @media #{$tablet} {           
+            width: 12rem;            
+        }
+    }
+  
+    @include flex(flex, row, space-evenly, wrap)
+}
+    
 .titulo2{
     color: $darkerGreen;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
     margin: 40px;
+
+    @media #{$tablet} {       
+        font-size: 30px;
+        padding-top: 5px;        
+    }
+    @media #{$mobile} {        
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 5vh;        
+    }
 }
 
 .titulo3 {
@@ -35,27 +58,49 @@
     font-size: 30px;
     margin: 30px;
     text-align: center;
+
+    @media #{$laptop} {        
+        font-size: 20px;
+        text-align: left;        
+    }
+    @media #{$tablet} {       
+        font-size: 15px;
+        text-align: left;
+        margin: 15px;        
+    }
+    @media #{$mobile} {       
+        font-size: 15px;
+        margin: 10px;
+        text-align: center;
+        margin-bottom: 5px;        
+    }
 }
-  
+
 .tresProductosNuevos {
      align-items: center;
-
-    @include flex(flex, row, space-evenly, nowrap)
-  
-    .tresProductosNuevos__productosNuevos {
+ 
+    .productosNuevos {
         margin: 15px;
         text-align: center;
         animation: pulse;
         animation-iteration-count: infinite;
 
+        .nuevoProducto {
+            width: 15rem;
+
+            @media #{$tablet} {               
+                width: 12rem;                
+            }
+        }        
+
         @include styles(#f8bf0a,20px,bold)
     }
+
+    @include flex(flex, row, space-evenly, wrap)
 }
-  
+
 .topTenCaja {
     margin: 100px;
-
-    @extend %boxShadow;
   
     .topTenCaja__lista10 {
         margin-left: 10vw;
@@ -63,11 +108,31 @@
         text-align: left;
         font-weight: bold;
         display: inline-block;
+
+        @media #{$laptop} {           
+            font-size: 20px;
+            text-align: left;
+            font-weight: bold;            
+        }
+        @media #{$tablet} {           
+            font-size: 17px;
+            text-align: left;
+            font-weight: bold;            
+        }
+    
     }
-  
+    
     .topTenCaja__lista10 li {
         list-style: decimal;
         line-height: 50px;
     }
+
+    @media #{$laptop} {      
+           margin: 5px;        
+    }
+    @media #{$tablet} {       
+        margin: 5px;        
+    }
 }
+
   

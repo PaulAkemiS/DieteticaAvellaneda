@@ -19,7 +19,25 @@
             margin-left: 7vw;
             margin-bottom: 15vh;
             grid-area: logo;
-        }
+
+            @media #{$laptop} {                
+                width: 22vw;
+            }             
+            @media #{$tablet} {               
+                width: 30vw;
+                margin-top: 10vh; 
+                margin-bottom: 20vh;               
+            }
+            @media #{$mobile+125} {                 
+                width: 35vw;
+                margin-top: 15vh;
+            }            
+            @media #{$mobile} {                 
+                width: 40vw;
+                margin-top: 15vh;
+                margin-left: 7vw;
+            }        
+        }        
     
         .list {
             text-align: end;
@@ -34,7 +52,33 @@
                 list-style-type: none;
                 padding: 20px;
 
+                .dropdown {
+                    @media #{$laptop} {
+                        margin-right: 40px;
+                    }
+                    @media #{$tablet} {                        
+                        margin-right: 40px;                        
+                    }
+                    @media #{$mobile} {                        
+                        margin-right: 40px;                        
+                    }
+                }
+
                 @extend %fontStyle;
+
+                @media #{$laptop} {                                        
+                    font-size: 16px;
+                    padding: 10px;                    
+                }
+                @media #{$tablet} {                    
+                    font-size: 15px;
+                    padding: 10px;                    
+                }
+                @media #{$mobile} {                    
+                    font-size: 15px;
+                    padding: 11px;
+                    margin: 0%;                    
+                }
             }
 
             .list__itemList a {
@@ -49,6 +93,28 @@
             .list__temSubmenu:hover > .dropdown-menu {
                 display: block;
             }
-        }
+
+            @media #{$laptop} {                
+                margin-top: 30vh;                
+            }
+            @media #{$tablet} {                
+                display: flex;
+                flex-direction: column;
+                margin-top: 30vh;
+                margin-right: 5vw;               
+            }   
+            @media #{$mobile} {               
+                display: flex;
+                flex-direction: column;
+                margin-top: 30vh;
+                margin-right: 5vw;                
+            } 
+        }      
+    }
+   
+    @media #{$tablet} {    
+        height: 25vh;
     }
 }
+
+  
