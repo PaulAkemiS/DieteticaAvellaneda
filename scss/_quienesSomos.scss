@@ -4,6 +4,15 @@
     border-bottom: #bac751 solid 4px;
 
     @extend %fontTitulo1;
+
+    @media #{$tablet} {
+        font-size: 3rem;
+        margin-top: 60vh;
+    }
+    @media #{$mobile} {
+        font-size: 2rem;
+        margin-top: 60vh;
+    }
 }
   
 .titulo1-modifier {
@@ -16,6 +25,20 @@
     text-align: center;
     font-size: 30px;
     margin: 40px;
+
+    @media #{$laptop} {
+        font-size: 30px;
+        padding-top: 5px;
+    }
+    @media #{$tablet} {
+        font-size: 30px;
+        padding-top: 5px;        
+    }
+    @media #{$mobile} {        
+        font-size: 20px;
+        padding-top: 5px;
+        margin: 5vh;        
+    }
 }
 
 .texto {
@@ -38,27 +61,97 @@
     margin-bottom: 100px;
 
     .cajaNegocio__imagenNegocio1{
+        width: 40vw;
         grid-area: imagenNegocio1;
-    }
+
+        @media #{$laptop} {            
+            width: 40vw;  
+            display: flex;
+            flex-direction: column;           
+        }
+        @media #{$tablet} {
+            width: 60vw;
+            margin-left: 20vw;            
+        }
+        @media #{$mobile} {
+            width: 80vw;           
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+        }
+    }    
 
     .cajaNegocio__imagenNegocio2{
+        width: 40vw;
         grid-area: imagenNegocio2;
-    }
+
+        @media #{$laptop} {
+            width: 40vw;           
+            display: flex;
+            flex-direction: column;
+        }
+        @media #{$tablet} {
+            width: 60vw;
+            margin-left: 20vw;
+        }
+        @media #{$mobile} {
+            width: 80vw;           
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+        }
+    }    
 
     .cajaNegocio__texto{
         font-size: 15px;
         margin: 30px;
         padding: 10px;
     }
-
+    
     .cajaNegocio__textoNegocio{
         margin: 50px;
         grid-area: textoNegocio;
         text-align: left;
         transition: 0.5s;
+    
+        @media #{$tablet} {
+            margin-left: 23vw;
+        }
+        @media #{$mobile} {
+            width: 70vw;
+            margin-left: 2rem;
+            font-size: 15px;
+        }    
     }
 
     .cajaNegocio__textoNegocio:hover{
-    font-size: 25px;
+        font-size: 25px;
+    }
+
+    .cajaNegocio__mapaNegocio iframe{
+        
+        @media #{$laptop} {
+            width: 50vw;
+            padding-left: 8vw;
+        }
+        @media #{$tablet} {
+            width: 80vw;
+            padding-left: 25vw;
+        }
+        @media #{$mobile} {
+            width: 90vw;
+            padding-left: 3rem;
+        }
+    }
+
+    @media #{$tablet} {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media #{$mobile} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

@@ -4,6 +4,15 @@
     border-bottom: #bac751 solid 4px;
 
     @extend %fontTitulo1;
+
+    @media #{$tablet} {
+        font-size: 3rem;
+        margin-top: 60vh;
+    }
+    @media #{$mobile} {
+        font-size: 2rem;
+        margin-top: 60vh;
+    }
 }
   
 .titulo1-modifier {
@@ -20,33 +29,72 @@
         font-size:30px;
         text-align:left;
         margin-bottom:20px;
+
+        @media #{$tablet} {
+            font-size: 25px;
+        }
+        @media #{$mobile} { 
+            font-size: 20px;
+        }
     }
 
     .recuadro__form-label-select {
         color:black;
         font-size:20px;
+
+        @media #{$mobile} { 
+            font-size: 15px;
+        }
     }
 
-    .recuadro__cajaTexto{
+    .recuadro__cajaTexto {
         width:$ancho/2;
-        height:5vh;
+        font-size: 20px;
         margin-bottom:15px;
+
+        @media #{$tablet} {
+            font-size: 15px;
+        }
+        @media #{$mobile} { 
+            width: 15rem;
+        }
     }
 
-    .recuadro__cajaTexto-checkBox{
+    .recuadro__cajaTexto-checkBox {
         width:20px;
     }
 
-    .btn-orange{
+    .recuadro__form-label-cuadro {
+        width: 20rem;
+
+        @media #{$mobile} { 
+            width: 15rem;
+        }
+    }
+
+    .btn-orange {
         color: white;
         background-color: #f8bf0a ;
         width: 10vw;
         height: 7vh;
         margin: 20px;
         margin-bottom: 20vh;
+
+        @media #{$mobile} { 
+            width: 7rem;
+            margin: auto;
+        }
     }
   
     .btn-rounded{
         border-radius: 15%;
+    }
+
+    @media #{$laptop} {
+        margin-left: 40vh;
+        padding-left: 2rem;
+    }
+    @media #{$mobile} { 
+        margin-left: 1rem;
     }
 }
