@@ -35,11 +35,7 @@
     @include flex(flex, row, space-evenly, wrap)
 }
     
-.titulo2{
-    color: $darkerGreen;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
+.titulo2{    
     margin: 40px;
 
     @media #{$tablet} {       
@@ -51,6 +47,8 @@
         padding-top: 5px;
         margin: 5vh;        
     }
+
+    @extend %fontTitulo2;
 }
 
 .titulo3 {
@@ -118,8 +116,7 @@
             font-size: 17px;
             text-align: left;
             font-weight: bold;            
-        }
-    
+        }    
     }
     
     .topTenCaja__lista10 li {

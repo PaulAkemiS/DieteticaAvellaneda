@@ -17,10 +17,7 @@
   }
 }
 
-.titulo2 {
-  color: $darkerGreen;
-  text-align: center;
-  font-size: 30px;
+.titulo2 { 
   margin: 20px;
 
   @media #{$laptop} {    
@@ -37,6 +34,8 @@
     padding-top: 5px;
     margin: 5vh;    
   }
+
+  @extend %fontTitulo2;
 }
 
 .cajasArticulos {

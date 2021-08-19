@@ -1,3 +1,5 @@
+/* colors */
+/* media querys */
 body #header #headerGrid .list .list__itemList {
   font-size: 19px;
   color: black;
@@ -8,6 +10,12 @@ body .tituloArticulos, body .titulo1 {
   text-align: center;
   color: #bac751;
   font-weight: bolder; }
+
+body .titulo2 {
+  color: #4c8530;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px; }
 
 * {
   margin: 0;
@@ -93,7 +101,7 @@ body {
           text-decoration: none; }
         body #header #headerGrid .list .list__itemList a:hover {
           color: #baa14f; }
-        body #header #headerGrid .list .list__temSubmenu:hover > .dropdown-menu {
+        body #header #headerGrid .list:hover > .dropdown-menu {
           display: block; }
         @media (max-width: 1024px) {
           body #header #headerGrid .list {
@@ -145,9 +153,6 @@ body {
         margin-top: 10vh;
         margin-bottom: 10vh; } }
   body .titulo2 {
-    color: #4c8530;
-    text-align: center;
-    font-size: 30px;
     margin: 20px; }
     @media (max-width: 1024px) {
       body .titulo2 {
@@ -230,10 +235,6 @@ body {
         grid-row-gap: 0;
         justify-content: center; } }
   body .titulo2 {
-    color: #4c8530;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
     margin: 40px; }
     @media (max-width: 1024px) {
       body .titulo2 {
@@ -354,10 +355,6 @@ body {
         body .cajasProductos .cajasProductos__cuadrosProductos img {
           width: 12rem; } }
   body .titulo2 {
-    color: #4c8530;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
     margin: 40px; }
     @media (max-width: 768px) {
       body .titulo2 {
@@ -520,10 +517,6 @@ body {
           margin-bottom: 20%;
           padding-bottom: 60%; } }
   body .titulo2 {
-    color: #4c8530;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 30px;
     margin: 40px; }
     @media (max-width: 1024px) {
       body .titulo2 {
@@ -599,10 +592,6 @@ body {
         font-size: 2rem;
         margin-top: 60vh; } }
   body .titulo2 {
-    color: #4c8530;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 30px;
     margin: 40px; }
     @media (max-width: 1024px) {
       body .titulo2 {

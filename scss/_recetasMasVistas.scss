@@ -1,9 +1,5 @@
 .titulo2 {
-    color: $darkerGreen;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    margin: 40px;
+       margin: 40px;
 
     @media #{$laptop} {        
         font-size: 30px;
@@ -19,6 +15,8 @@
         padding-top: 5px;
         margin: 5vh;        
     }
+
+    @extend %fontTitulo2;
 }
 
 .cajasRecetas {
